@@ -1,0 +1,42 @@
+@import 'settings.scss';
+
+
+.component {
+	background-color: $color-one;
+
+	.row {
+		position: relative;
+		display: block;
+	}
+
+
+		.image {
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+
+		}
+
+		.info {
+			height: 50%;
+			width: 100%;
+		}	
+
+}
+
+	.containerTop {	
+		position: absolute;
+		width: 30vw;
+		height: 60vh;
+		padding: 24px;
+
+
+	}
+
+	.containerBottom {
+		padding: 24px;
+		width: 30vw;
+		height: 60vh;
+
+	}
