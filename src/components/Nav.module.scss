@@ -3,13 +3,12 @@
 
 .component {
 	z-index: 9999;
-	position: static;
-	background-color: $color-four;
+	position: fixed;
+	border-radius:0 0 60% 60%;
+	background-color: rgba(255,255,255,0.1);
 	width: 100%;
 	margin: 0;
-	-webkit-box-shadow: inset 0px -66px 42px -25px rgba(105,105,105,0.63);
-	-moz-box-shadow: inset 0px -66px 42px -25px rgba(105,105,105,0.63);
-	box-shadow: inset 0px -66px 42px -25px rgba(105,105,105,0.63);
+
 
 	ul {
 		margin: 0;
@@ -21,6 +20,7 @@
 			margin: 12px;
 
 			a {
+				opacity: 1;
 				cursor: pointer;
 				color: black;
 				transition: $transition;
@@ -28,7 +28,7 @@
 
 			a:hover {
 
-			color: $color-two;
+			color: $color-five;
 			}
 		}
 	}

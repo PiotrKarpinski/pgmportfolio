@@ -2,7 +2,7 @@
 
 
 .component {
-	height: 70vh;
+	height: 90vh;
 	overflow: hidden;
 
     .image {    
@@ -43,13 +43,25 @@
 
 @keyframes universe-close-up {
   0% {
-    transform: scale(1.02);
+    transform: scale(1.03) translate(-0.4%);
+    filter: contrast(1);
   }
+
+  45% {
+  	transform: scale(1.002) translate(-0.1%);
+  }
+
   50%{
-    transform: scale(1);
+    transform: scale(1) translate(0.1);
+    filter: contrast(1.1);
+  }
+
+  95%{
+  	transform: scale(1.018) translate(-0.1%);
   }
 
   100% {
-    transform: scale(1.02);
+  	filter: contrast(1);
+    transform: scale(1.03) translate(-0.4%);
   }
 }
