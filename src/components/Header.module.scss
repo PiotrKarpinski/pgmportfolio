@@ -2,7 +2,7 @@
 
 
 .component {
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 
     .image {    
@@ -12,10 +12,11 @@
     position: relative;
     background-position: center;
 	background-size: cover;	
-  	background-image: url('../images/header.jpg');
+  	background-image:  	linear-gradient(to bottom,transparent 50%,#191927 95% 100% ),
+	url('../images/header.jpg');
 
 		h1 {    
-			animation: header-goes-far infinite 20s linear;
+			animation: header-goes-far infinite 30s ease-in-out;
 			top: 50%;
 			left: 50%;
 			position: absolute;
@@ -43,25 +44,30 @@
 
 @keyframes universe-close-up {
   0% {
-    transform: scale(1.03) translate(-0.4%);
-    filter: contrast(1);
+    transform: scale(1.03);
+  }
+
+  5% {
+  	transform: scale(1.025);
   }
 
   45% {
-  	transform: scale(1.002) translate(-0.1%);
+  	transform: scale(1.005);
   }
 
   50%{
-    transform: scale(1) translate(0.1);
-    filter: contrast(1.1);
+    transform: scale(1);
+  }
+
+  55% {
+  	transform: scale(1.005);
   }
 
   95%{
-  	transform: scale(1.018) translate(-0.1%);
+  	transform: scale(1.025);
   }
 
   100% {
-  	filter: contrast(1);
-    transform: scale(1.03) translate(-0.4%);
+    transform: scale(1.03);
   }
 }

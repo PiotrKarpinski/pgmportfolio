@@ -1,16 +1,38 @@
 import React from 'react';
 import styles from './Project.module.scss'
 import Image from './Image.js';
+import VizSensor from 'react-visibility-sensor';
 
-function Project(props) {
+
+class Project extends React.Component {
+
+    state = {
+    imgViz: false,
+    }
+
+    render() {
+
   return (
-    <div className={styles.component}>
+    <VizSensor
+        partialVisibility
+        onChange={(isVisible) => {
+          this.setState({imgViz: isVisible})
+        }}
+    >
+    <div className={styles.component}         
+
+    style={{
+            
+            opacity: this.state.imgViz ? 1 : 0,
+            transition: 'all 600ms ease-in-out'
+          }}>
     <div className={styles.image}>
-    <h3>{props.title}</h3>
-    <Image img={props.img}/>
+    <h3>{this.props.title}</h3>
+    <Image img={this.props.img}/>
     </div>
     </div>
+    </VizSensor>
   );
-}
+}}
 
 export default Project;

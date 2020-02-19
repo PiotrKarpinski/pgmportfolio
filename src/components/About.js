@@ -2,14 +2,38 @@ import React from 'react';
 import styles from './About.module.scss'
 import AboutImgOne from '../images/about1.jpg';
 import AboutImgTwo from '../images/about2.jpg';
+import VizSensor from 'react-visibility-sensor';
 
 
 
-function About() {
+class About extends React.Component {
+
+	state = {
+    imgViz1: false,
+    imgViz2: false
+  }
+
+
+	render(){
+
+
   return (
+
     <section className={styles.component}>
-    <div className={styles.row}>
-    <div className={styles.container} style ={{ marginLeft: 25 +'vw'}}>
+    <VizSensor
+    	partialVisibility
+        onChange={(isVisible) => {
+          this.setState({imgViz1: isVisible})
+        }}
+    >
+    <div className={styles.container}    
+
+    	style={{
+            opacity: this.state.imgViz1 ? 1 : 0,
+            marginLeft: this.state.imgViz1 ? 12 +'vw' : 0 + 'vw', 
+            transition: 'all 700ms ease-in-out'
+          }}>
+
     	<div style={{ backgroundImage: `url(${AboutImgOne})`}} className={styles.image}>
     	</div>
     	<div className={styles.info}>
@@ -22,9 +46,21 @@ function About() {
       		</p>
         </div>
     </div>
-    </div>
-    <div className={styles.row}>
-    <div className={styles.container} style ={{ marginRight: 25 +'vw'}}>
+    </VizSensor>
+    <VizSensor
+        partialVisibility
+        onChange={(isVisible) => {
+          this.setState({imgViz2: isVisible})
+        }}
+    >
+    <div className={styles.container}           
+    	style={{
+
+            opacity: this.state.imgViz2 ? 1 : 0,
+            marginRight: this.state.imgViz2 ? 14 +'vw' : 0 + 'vw', 
+            transition: 'all 700ms ease-in-out'
+          }}
+		>
     	<div style={{ backgroundImage: `url(${AboutImgTwo})`}} className={styles.image}>
     	</div>
     	<div className={styles.info}>
@@ -37,9 +73,10 @@ function About() {
 	    	</p>
     </div>
     </div>
-    </div>
+    </VizSensor>
+
     </section>
   );
-}
+}}
 
 export default About;
