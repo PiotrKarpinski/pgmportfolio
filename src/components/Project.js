@@ -26,10 +26,16 @@ class Project extends React.Component {
             opacity: this.state.imgViz ? 1 : 0,
             transition: 'all 600ms ease-in-out'
           }}>
+    
+    <div className={styles.description}>
+    
+    <p>{this.props.description}</p>
+    </div>          
     <div className={styles.image}>
     <h3>{this.props.title}</h3>
     <Image img={this.props.img}/>
     </div>
+    <a href={this.props.url}/>
     </div>
     </VizSensor>
   );

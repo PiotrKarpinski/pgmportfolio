@@ -6,7 +6,7 @@
 	background-position: center;
 	background-size: cover;	
   	background-image: 
-  	linear-gradient(to bottom,#191927,#28284f );
+  	linear-gradient(to bottom,#191927,black );
 
 
 		.image {
@@ -18,22 +18,40 @@
 		}
 
 		.info {
+			font-family: $font-text;
 			height: 50%;
 			width: auto;
 		}	
 
 }
 
+	.row {
+		flex-wrap: wrap;
+		display: flex;
+	}
+
 	.container{	
 		-webkit-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
 		-moz-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
 		box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
-		background-color: $color-four;
+		background-color: $color-one;
 		margin: auto;
 		width: 30vw;
 		height: 80vh;
 		padding: 6px;
+	}
+
+	.list {
+		margin: 48px auto;
+		height: 80vh;
+		width: 50%;
 
 
+			.title {
+		display: inline-block;
+		margin: auto;
+		color: $color-one;
+		font-family: $font-text;
+	}
 	}
 

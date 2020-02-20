@@ -16,31 +16,22 @@
 	url('../images/header.jpg');
 
 		h1 {    
+			font-family: $font-title;
+			color: $color-one;
 			animation: header-goes-far infinite 30s ease-in-out;
 			top: 50%;
 			left: 50%;
 			position: absolute;
 			transform: translate(-50%,-50%);
 			margin: 24px;
-			font-size: 48px;
+			font-size: 72px;
 			letter-spacing: 4px;
 		}
 
 	}
 }
 
-@keyframes header-goes-far {
-  0% {
-    letter-spacing: 4px;
-  }
-  50%{
-    letter-spacing: 6px;
-  }
 
-  100% {
-    letter-spacing: 4px;
-  }
-}
 
 @keyframes universe-close-up {
   0% {

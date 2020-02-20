@@ -8,7 +8,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 function Footer() {
   return (
     <footer>
-        <p>Coded by P.G.M. Karpinski</p>
+        Coded by P.G.M. Karpinski
     </footer>
   );
 }

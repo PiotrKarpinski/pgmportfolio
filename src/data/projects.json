@@ -2,51 +2,226 @@
 	"projects":
 	[
 	
+		{
+			"id": 1,
+			"title": "Layzee Beat Shop",
+			"img": "layzeebeatshop",
+			"url": "http://www.layzeebeats.vot.pl",
+			"description": "Phasellus vestibulum, urna sed finibus ornare, lectus augue lobortis orci, quis pharetra neque justo et lacus. Donec sagittis maximus ipsum vel congue."
+		},
+		{
+			"id": 2,
+			"title": "Online jewellery shop",
+			"img": "workinprogress",
+			"url": "http://www.layzeebeats.vot.pl",
+			"description": "Nam dictum, odio id vestibulum hendrerit, massa quam egestas dolor, sed aliquam lectus lectus sit amet tortor. Ut nec laoreet turpis, non blandit erat."
+		},
+		{
+			"id": 3,
+			"title": "Circle Organizer",
+			"img": "workinprogress",
+			"url": "http://www.layzeebeats.vot.pl",
+			"description": "Nulla a dolor gravida, vestibulum enim quis, venenatis leo."
+		},
+		{
+			"id": 4,
+			"title": "Beat Maker",
+			"img": "workinprogress",
+			"url": "http://www.layzeebeats.vot.pl",
+			"description": " Suspendisse rhoncus viverra lectus, maximus lobortis massa ornare at. Quisque sit amet rutrum nunc, quis ultricies sem."
+		},
+		{
+			"id": 5,
+			"title": "Not yet added",
+			"img": "workinprogress",
+			"url": null,
+			"description": "..."
+		},
+		{
+			"id": 6,
+			"title": "Not yet added",
+			"img": "workinprogress",
+			"url": null,
+			"description": "..."
+		}
+
+
+
+	],
+
+	"content":
 	{
-		"id": 1,
-		"title": "Layzee Beat Shop",
-		"img": "layzeebeatshop",
-		"url": "http://www.layzeebeats.vot.pl",
-		"description": "Phasellus vestibulum, urna sed finibus ornare, lectus augue lobortis orci, quis pharetra neque justo et lacus. Donec sagittis maximus ipsum vel congue."
-	},
-	{
-		"id": 2,
-		"title": "Online jewellery shop",
-		"img": "workinprogress",
-		"url": "http://www.layzeebeats.vot.pl",
-		"description": "Nam dictum, odio id vestibulum hendrerit, massa quam egestas dolor, sed aliquam lectus lectus sit amet tortor. Ut nec laoreet turpis, non blandit erat."
-	},
-	{
-		"id": 3,
-		"title": "Circle Organizer",
-		"img": "workinprogress",
-		"url": "http://www.layzeebeats.vot.pl",
-		"description": "Nulla a dolor gravida, vestibulum enim quis, venenatis leo."
-	},
-	{
-		"id": 4,
-		"title": "Beat Maker",
-		"img": "workinprogress",
-		"url": "http://www.layzeebeats.vot.pl",
-		"description": " Suspendisse rhoncus viverra lectus, maximus lobortis massa ornare at. Quisque sit amet rutrum nunc, quis ultricies sem."
-	},
-	{
-		"id": 5,
-		"title": "Not yet added",
-		"img": "workinprogress",
-		"url": null,
-		"description": "..."
-	},
-	{
-		"id": 6,
-		"title": "Not yet added",
-		"img": "workinprogress",
-		"url": null,
-		"description": "..."
+	
+		"about":[
+
+			{
+				"id": 1,
+				"title": "Layzee Beat Shop",
+				"description": "Phasellus vestibulum, urna sed finibus ornare, lectus augue lobortis orci, quis pharetra neque justo et lacus. Donec sagittis maximus ipsum vel congue."
+			},
+			{
+				"id": 2,
+				"title": "Layzee Beat Shop",
+				"description": "Phasellus vestibulum, urna sed finibus ornare, lectus augue lobortis orci, quis pharetra neque justo et lacus. Donec sagittis maximus ipsum vel congue."
+			}
+		],
+		"skills":[
+
+			{
+				"id": 1,
+				"marginDir":"marginRight",
+				"iconName":"test",
+				"title": "Junior",
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"css3-alt",
+						"prefix": "fab"
+					},
+					{
+						"id": 2,
+						"iconName":"html5",
+						"prefix": "fab"
+					},
+					{
+						"id": 3,
+						"iconName":"js",
+						"prefix": "fab"
+					}				
+				
+				],					
+				"description": null
+			},
+			{
+				"id": 2,
+				"iconName":"test",
+				"marginDir":"marginRight",				
+				"title": "Layzee Beat Shop",
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"react",
+						"prefix": "fab"
+					},
+					{
+						"id": 2,
+						"iconName":"sass",
+						"prefix": "fab"
+					},
+					{
+						"id": 3,
+						"iconName":"bootstrap",
+						"prefix": "fab"
+					}			
+				
+				],	
+				"description": null
+			},
+			{
+				"id": 3,
+				"iconName":"test",	
+				"marginDir":"marginRight",			
+				"title": "Layzee Beat Shop",
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"github",
+						"prefix": "fab"
+					},
+					{
+						"id": 2,
+						"iconName":"yarn",
+						"prefix": "fab"
+					},
+					{
+						"id": 3,
+						"iconName":"npm",
+						"prefix": "fab"
+					}			
+				
+				],	
+				"description": null
+			},
+			{
+				"id": 4,
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"java",
+						"prefix": "fab"
+					},
+					{
+						"id": 2,
+						"iconName":"salesforce",
+						"prefix": "fab"
+					},
+					{
+						"id": 3,
+						"iconName":"database",
+						"prefix": "fas"
+					}			
+				
+				],	
+				"marginDir":"marginRight",			
+				"title": "Layzee Beat Shop",
+				"description": null
+			}
+
+
+
+		],
+		"links":[
+
+			{
+				"id": 1,
+				"url":"https://www.linkedin.com/in/pgmkarpinski/",
+				"marginDir":"marginLeft",
+				"title": "LinkedIn",
+				"description": null,
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"linkedin",
+						"prefix": "fab"
+					}
+				
+				]
+			},
+			{
+				"id": 2,
+				"url":"https://github.com/PiotrKarpinski",
+				"marginDir":"marginLeft",
+				"title": "GitHub",
+				"description": null,
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"github",
+						"prefix": "fab"
+					}
+				
+				]
+			},
+			{
+				"id": 3,			
+				"url":null,
+				"marginDir":"marginLeft",
+				"icons":[
+					{
+						"id": 1,
+						"iconName":"envelope",
+						"prefix": "fas"
+					}
+				
+				],
+				"title": "Email",
+				"description": "pgmkarpinski@gmail.com"
+			}
+
+
+		]
+
+
 	}
-
-
-
-]
 }
 

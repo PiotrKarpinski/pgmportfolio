@@ -26,6 +26,7 @@
   padding: 15px; /* Some padding */
   border-radius: 70%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  animation: jumping-icon infinite 3s ease-in-out;
 }
 
 .project-img {
@@ -35,12 +36,29 @@
 
 }
 
+footer {
+  padding: 24px;
+  margin-top: 30vh;
+  background-color: #ededed;
+  font-family: 'Barlow Condensed', sans-serif;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@keyframes jumping-icon {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  10%{
+    transform: scale(1.2);
   }
+  20% {
+    transform: scale(1);
+  }
+
+  30%{
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }  
 }

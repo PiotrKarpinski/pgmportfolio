@@ -4,11 +4,12 @@ import styles from './Header.module.scss'
 function Header({children}) {
   return (
     <header className={styles.component}>
-    <div className={styles.image}>
     <div>{children}</div>
+    <div className={styles.image}>
+     
     
     
-    <h1>P.G.M Portfolio</h1>
+    <h1>Welcome on my portfolio page</h1>
     </div>
     </header>
 

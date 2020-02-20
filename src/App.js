@@ -44,7 +44,7 @@ render() {
           }}
           className='scroll-to-top' onClick={this.handleClick}><FontAwesomeIcon icon={faChevronUp}/></button>
 
-      <About/>
+      <About content={data.content}/>
       
 
       <VizSensor

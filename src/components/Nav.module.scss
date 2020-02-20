@@ -2,8 +2,9 @@
 
 
 .component {
+	padding-top: 12px;
 	z-index: 9999;
-	position: fixed;
+	position: absolute;
 	border-radius:0 0 60% 60%;
 	background-color: rgba(255,255,255,0.1);
 	width: 100%;
@@ -22,7 +23,7 @@
 			a {
 				opacity: 1;
 				cursor: pointer;
-				color: black;
+				color: $color-one;
 				transition: $transition;
 			}
 
