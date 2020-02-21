@@ -60,7 +60,7 @@ class Box extends React.Component {
 
       ))}
     </div>
-    <a href={this.props.url} target='_blank'/>
+    <a href={this.props.url} target='_blank' rel="noopener noreferrer"/>
     
     </div>
     </VizSensor>

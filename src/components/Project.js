@@ -35,7 +35,7 @@ class Project extends React.Component {
     <h3>{this.props.title}</h3>
     <Image img={this.props.img}/>
     </div>
-    <a href={this.props.url}/>
+    <a target='_blank' rel="noopener noreferrer" href={this.props.url}/>
     </div>
     </VizSensor>
   );

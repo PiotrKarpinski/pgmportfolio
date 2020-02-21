@@ -1,7 +1,7 @@
 import React from 'react';
 import workinprogressImg from '../images/workinprogress.jpg';
 import layzeebeatshopImg from '../images/layzeebeatshop.jpg';
-
+import greenoakImg from '../images/greenoak.jpg';
 
 
 import '../App.css';
@@ -14,7 +14,8 @@ class Image extends React.Component {
     let imgObj =
       {
 "workinprogress":workinprogressImg,
-"layzeebeatshop":layzeebeatshopImg
+"layzeebeatshop":layzeebeatshopImg,
+"greenoak":greenoakImg
 
 }
         return (
