@@ -35,8 +35,7 @@ class Box extends React.Component {
 
 	render(){
 
-    console.log(this.props)
-
+console.log(this.props)
 
   return (
 
@@ -60,7 +59,7 @@ class Box extends React.Component {
 
       ))}
     </div>
-    <a href={this.props.url} target='_blank' rel="noopener noreferrer"/>
+    <a href={this.props.url} target={this.props.blank ? '_blank' : '_self'} rel="noopener noreferrer"/>
     
     </div>
     </VizSensor>

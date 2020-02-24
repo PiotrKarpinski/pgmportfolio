@@ -2,7 +2,7 @@
 
 
 .component {
-	padding-top: 192px;
+	padding: 192px 0;
 	background-position: center;
 	background-size: cover;	
   	background-image: 
@@ -10,16 +10,16 @@
 
 
 		.image {
-			width: 100%;
-			height: 50%;
+			height: 60%;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 
 		.info {
+			margin: 12px;
+			font-size: 24px;
 			font-family: $font-text;
-			height: 50%;
 			width: auto;
 		}	
 
@@ -36,20 +36,17 @@
 		box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
 		background-color: $color-one;
 		margin: auto;
-		width: 30vw;
-		height: 80vh;
-		padding: 6px;
+		width: 500px;
+		height: 700px;
 	}
 
 	.list {
-		margin: 48px auto;
+		margin: 48px  auto 0 0;
 		height: 80vh;
-		width: 50%;
 
 
-			.title {
+		.title {
 		display: inline-block;
-		margin: auto;
 		color: $color-one;
 		font-family: $font-text;
 	}

@@ -2,10 +2,14 @@
 
 
 .component {
-	width: 30vw;
-	height: 40vh;
+	margin: 48px auto;
+	width: 60vw;
+	height: 50vh;
 	position: relative;
 	overflow: hidden;
+	-webkit-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
+	box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
 	a {
 		transform: translate(-50%,-50%);
 		position: absolute;

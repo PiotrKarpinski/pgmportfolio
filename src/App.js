@@ -14,7 +14,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link, animateScroll as scroll } from "react-scroll";
 import data from './data/projects.json'
 import VizSensor from 'react-visibility-sensor';
-
+import Contact from './components/Contact.js';
 
 
 class App extends React.Component {
@@ -55,6 +55,7 @@ render() {
       >
       <ProjectsContainer projects={data.projects}/>
       </VizSensor>
+      <Contact />
       <Footer/>
       
 

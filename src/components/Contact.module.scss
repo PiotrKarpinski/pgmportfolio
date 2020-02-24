@@ -1,0 +1,27 @@
+@import 'settings.scss';
+
+.component {
+	font-family: $font-text;
+	background-color: $color-one;
+	margin:48px auto;
+	width: 70vw;
+	padding: 36px 24px;
+
+	h3 {
+		font-size: 36px;
+		margin: 24px;
+	}
+
+	.env {
+		font-size: 48px;
+		color: $color-four;
+	}
+
+		span{
+			color: $color-three;
+			font-size: 18px;
+		}
+	}
+
+
+

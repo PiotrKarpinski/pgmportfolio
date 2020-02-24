@@ -31,8 +31,9 @@ class Project extends React.Component {
     
     <p>{this.props.description}</p>
     </div>          
-    <div className={styles.image}>
     <h3>{this.props.title}</h3>
+    <div className={styles.image}>
+    
     <Image img={this.props.img}/>
     </div>
     <a target='_blank' rel="noopener noreferrer" href={this.props.url}/>

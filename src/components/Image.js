@@ -2,7 +2,7 @@ import React from 'react';
 import workinprogressImg from '../images/workinprogress.jpg';
 import layzeebeatshopImg from '../images/layzeebeatshop.jpg';
 import greenoakImg from '../images/greenoak.jpg';
-
+import vocalizerImg from '../images/vocalizer.jpg';
 
 import '../App.css';
 
@@ -15,7 +15,8 @@ class Image extends React.Component {
       {
 "workinprogress":workinprogressImg,
 "layzeebeatshop":layzeebeatshopImg,
-"greenoak":greenoakImg
+"greenoak":greenoakImg,
+"vocalizer":vocalizerImg
 
 }
         return (
