@@ -43,9 +43,6 @@
 
 			{
 				"id": 1,
-				"marginDir":"marginRight",
-				"iconName":"test",
-				"title": "Junior",
 				"icons":[
 					{
 						"id": 1,
@@ -68,9 +65,6 @@
 			},
 			{
 				"id": 2,
-				"iconName":"test",
-				"marginDir":"marginRight",				
-				"title": "Layzee Beat Shop",
 				"icons":[
 					{
 						"id": 1,
@@ -93,9 +87,6 @@
 			},
 			{
 				"id": 3,
-				"iconName":"test",	
-				"marginDir":"marginRight",			
-				"title": "Layzee Beat Shop",
 				"icons":[
 					{
 						"id": 1,
@@ -136,8 +127,6 @@
 					}			
 				
 				],	
-				"marginDir":"marginRight",			
-				"title": "Layzee Beat Shop",
 				"description": null
 			}
 
@@ -150,8 +139,6 @@
 				"id": 1,
 				"url":"https://www.linkedin.com/in/pgmkarpinski/",
 				"blank": true,
-				"marginDir":"marginLeft",
-				"title": "LinkedIn",
 				"description": null,
 				"icons":[
 					{
@@ -182,7 +169,6 @@
 				"id": 3,			
 				"url":"#contact",
 				"blank": false,
-				"marginDir":"marginLeft",
 				"icons":[
 					{
 						"id": 1,
@@ -190,9 +176,7 @@
 						"prefix": "fas"
 					}
 				
-				],
-				"title": "Email",
-				"description": "pgmkarpinski@gmail.com"
+				]
 			}
 
 

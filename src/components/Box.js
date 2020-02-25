@@ -16,10 +16,8 @@ import { faSalesforce } from '@fortawesome/free-brands-svg-icons';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import { faJava } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase} from '@fortawesome/free-solid-svg-icons';
-import { faYarn } from '@fortawesome/free-brands-svg-icons';
-import { faNpm} from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faLinkedin,faCss3Alt,faHtml5, faReact,faGithub,faJs,
+library.add(fab,faLinkedin,faCss3Alt,faHtml5, faReact,faGithub,faJs,
 faSass,
 faSalesforce,
 faBootstrap,
@@ -35,7 +33,6 @@ class Box extends React.Component {
 
 	render(){
 
-console.log(this.props)
 
   return (
 
@@ -48,14 +45,13 @@ console.log(this.props)
     <div style={{
 
             opacity: this.state.Viz ? 1 : 0,
-            [this.props.marginDir]: this.state.Viz ? 15 + 'vw' : 0 + 'vw',
-            transition: 'all 700ms ease-in-out'
+            transition: 'all 400ms ease-in-out'
           }}
         className={styles.component}>
         <div className={styles.icons}>
     {this.props.icons.map(({id, prefix, iconName}) => (
         
-        <FontAwesomeIcon style={{margin: 12 +'px', fontSize: 48+'px'}} key={id} icon={[prefix,iconName]}/>
+        <FontAwesomeIcon style={{margin: 12 +'px', fontSize: 40+'px'}} key={id} icon={[prefix,iconName]}/>
 
       ))}
     </div>

@@ -6,6 +6,7 @@ function ProjectsContainer(props) {
 
   return (
     <section className={styles.component}>
+    	<h2>Moje projekty:</h2>
         <div className= {styles.container}>
          {props.projects.map(({id, url,img, title, description}) => (
         

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Nav() {
   return (
@@ -12,7 +12,7 @@ function Nav() {
     
         <ul>
 
-            <li><a rel="noopener noreferrer" target='_blank' href='https://www.youtube.com/watch?v=_tm-uZxzpeg'><FontAwesomeIcon icon={faGithub}/></a></li>
+            <li><a rel="noopener noreferrer" target='_blank' href='https://github.com/PiotrKarpinski'><FontAwesomeIcon icon={faGithub}/></a></li>
 
             <li><Link 
             activeClass="home"
@@ -24,7 +24,7 @@ function Nav() {
             style={{fontSize: 30+'px'}}
             ><FontAwesomeIcon icon={faHome}/></Link></li>
 
-            <li><a rel="noopener noreferrer" target='_blank' href='https://soundcloud.com/layzeone'><FontAwesomeIcon icon={faLinkedin}/></a></li>
+            <li><a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/pgmkarpinski/'><FontAwesomeIcon icon={faLinkedin}/></a></li>
 
 
 

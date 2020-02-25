@@ -2,14 +2,16 @@
 
 
 .component {
-	margin: 48px auto;
-	width: 60vw;
-	height: 50vh;
+	margin: 48px 12px;
 	position: relative;
 	overflow: hidden;
-	-webkit-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
-	-moz-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
-	box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.12);
+	width: 780px;
+	border: 4px solid $color-one;
+	border-radius: 24px;
+	-webkit-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.42);
+	-moz-box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.42);
+	box-shadow: -2px 19px 33px 0px rgba(0,0,0,0.42);
+
 	a {
 		transform: translate(-50%,-50%);
 		position: absolute;
@@ -18,11 +20,17 @@
 		width: 100%;
 		height: 100%;
 	}
+
+
+	h3 {	
+		font-family: $font-text;
+		margin-bottom: 24px;
+	}
 }
 
 .component:hover .image {
-	transform: scale(1.04);
-	filter: blur(6px);
+	transform: scale(1.03);
+	filter: blur(5px);
 }
 
 .component:hover .description {
@@ -31,6 +39,7 @@
 
 
 .image {
+
 	transition: $transition;
 	width: 100%;
 	height: 100%;
@@ -64,4 +73,10 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: inline;
+}
+
+@media(max-width: 767px) {
+	.description {
+		font-size: 8px;
+	}
 }

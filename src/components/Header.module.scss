@@ -15,22 +15,21 @@
   	background-image:  	linear-gradient(to bottom,transparent 50%,#191927 95% 100% ),
 	url('../images/header.jpg');
 
-		h1 {    
-			font-family: $font-title;
-			color: $color-one;
-			animation: header-goes-far infinite 30s ease-in-out;
-			top: 50%;
-			left: 50%;
-			position: absolute;
-			transform: translate(-50%,-50%);
-			margin: 24px;
-			font-size: 72px;
-			letter-spacing: 4px;
-		}
+
 
 	}
 }
 
+    h1 {    
+      font-family: $font-title;
+      color: $color-one;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      font-size: 72px;
+      letter-spacing: 4px;
+    }
 
 
 @keyframes universe-close-up {
@@ -60,5 +59,14 @@
 
   100% {
     transform: scale(1.03);
+  }
+}
+
+
+
+@media(max-width: 767px) {
+
+  h1 {
+    font-size: 36px;
   }
 }

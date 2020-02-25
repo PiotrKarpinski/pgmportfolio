@@ -16,7 +16,6 @@ class About extends React.Component {
 
 	render(){
 
-	console.log(this.props.content)
 
     return (
 
@@ -29,12 +28,13 @@ class About extends React.Component {
           this.setState({imgViz1: isVisible})
         }}
     >
+    <div className={styles.column}>
     <div className={styles.container}           
     	style={{
 
             opacity: this.state.imgViz1 ? 1 : 0,
-            marginLeft: this.state.imgViz1 ? 15 +'vw' : 0 + 'vw', 
-            transition: 'all 700ms ease-in-out'
+            left: this.state.imgViz1 ? 50 +'%' : 150 + '%', 
+            transition: 'all 800ms ease-in-out'
           }}
 		>
     	<div style={{ backgroundImage: `url(${AboutImgOne})`}} className={styles.image}>
@@ -45,9 +45,12 @@ class About extends React.Component {
 	    	</p>
     </div>
     </div>
+    </div>
     </VizSensor>
+
+    <div className={styles.column}>
     <div className={styles.list}>
-    <h3 style = {{ marginRight: 15+'vw'}} className={styles.title}>Technologies I use:</h3>
+    <h3 className={styles.title}>Technologie których używam:</h3>
              {this.props.content.skills.map(({id, icons,description, prefix, marginDir}) => (
         
         
@@ -56,9 +59,11 @@ class About extends React.Component {
       ))}
     </div>
     </div>
+    </div>
     <div className={styles.row}>
-        <div className={styles.list}>
-            <h3 style = {{ marginLeft: 15+'vw'}} className={styles.title}>Links and contact information</h3>
+        <div className={styles.column}>
+            <div className={styles.list}>
+            <h3 className={styles.title}>Linki i informacje kontaktowe:</h3>
 
              {this.props.content.links.map(({id, prefix, url, marginDir, description, icons,blank}) => (
         
@@ -67,26 +72,29 @@ class About extends React.Component {
 
       ))}
     </div>
+    </div>
     <VizSensor
         partialVisibility
         onChange={(isVisible) => {
           this.setState({imgViz2: isVisible})
         }}
     >
+    <div className={styles.column}>
     <div className={styles.container}           
     	style={{
 
             opacity: this.state.imgViz2 ? 1 : 0,
-            marginRight: this.state.imgViz2 ? 15 +'vw' : 0 + 'vw', 
-            transition: 'all 700ms ease-in-out'
+            left: this.state.imgViz2 ? 50 +'%' :  -50+ '%', 
+            transition: 'all 800ms ease-in-out'
           }}
 		>
     	<div style={{ backgroundImage: `url(${AboutImgTwo})`}} className={styles.image}>
     	</div>
     	<div className={styles.info}>
-    		<p style={{textAlign: "right"}}>
+    		<p style={{textAlign: "left"}}>
             {this.props.content.about[1].pl}
 	    	</p>
+    </div>
     </div>
     </div>
     </VizSensor>

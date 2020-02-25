@@ -26,12 +26,11 @@ class Project extends React.Component {
             opacity: this.state.imgViz ? 1 : 0,
             transition: 'all 600ms ease-in-out'
           }}>
-    
+
     <div className={styles.description}>
     
     <p>{this.props.description}</p>
     </div>          
-    <h3>{this.props.title}</h3>
     <div className={styles.image}>
     
     <Image img={this.props.img}/>

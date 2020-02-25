@@ -4,11 +4,16 @@
 	margin: 0;
 	padding-top: 182px;
 
+	h2 {
+	font-size: 36px;
+	font-family: $font-text;
+	}
+
 }
 
 .container {
 	justify-content: center;
-	margin: auto 96px;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 }

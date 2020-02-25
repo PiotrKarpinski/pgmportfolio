@@ -9,7 +9,7 @@ function Header({children}) {
      
     
     
-    <h1>Welcome on my portfolio page</h1>
+    <h1>P.G.M Portfolio</h1>
     </div>
     </header>
 
