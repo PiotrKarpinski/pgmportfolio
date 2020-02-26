@@ -81,7 +81,7 @@
 @media(max-width: 1440px) {
 
 	.row {
-		height: 200vh;
+		height: auto;
 		flex-flow: column;
 	}
 
@@ -90,6 +90,7 @@
 	}
 
 	.column {
+		height: 900px;
 		width: 100%;
 	}
 
