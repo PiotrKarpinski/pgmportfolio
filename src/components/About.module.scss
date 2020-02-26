@@ -90,7 +90,7 @@
 	}
 
 	.column {
-		height: 900px;
+		height: 800px;
 		width: 100%;
 	}
 
@@ -108,7 +108,7 @@
 		}
 
 		.column {
-			height: 900px;
+			min-height: 800px;
 		}
 
 		.container {
@@ -121,7 +121,7 @@
 		}
 
 		.list {
-			height: 50vh;
+			height: auto;
 		}
 
 	}
